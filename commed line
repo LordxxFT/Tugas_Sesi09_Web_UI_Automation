@@ -1,0 +1,11 @@
+npm init -y
+npm install mocha --save-dev
+npm install -g mocha
+npm install chai --save-dev
+npm install ajv
+npm install mochawesome --save-dev
+//npx mocha Test/GetUser/GetUser.js --reporter mochawesome (untuk memamnggil mochawesome reporter)
+
+npm run tes-digital-skola
+npm run tes-mochawesome
+npm run tes-simple-html
