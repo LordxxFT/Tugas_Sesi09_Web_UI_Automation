@@ -1,11 +1,17 @@
 {
     "name": "selenium-webdriver-tugas-09",
     "version": "1.0.0",
-    "description": "Tugas 09 Selenium WebDriver tests using Mocha with Mochawesome reports",
+    "description": "Update -- Tugas 09 -> Tugas 10 - Selenium WebDriver ",
     "scripts": {
         "Test-Tugas-09": "mocha test/sesi-9/test_sesi9.js  --recursive --timeout 60000",
         "Tugas-09-mochawesome": "mocha test/sesi-9/test_sesi9.js  --recursive --timeout 60000 --reporter mochawesome",
-        "Tugas-09-simple-html": "mocha test/sesi-9/test_sesi9.js  --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+        "Tugas-09-simple-html": "mocha test/sesi-9/test_sesi9.js  --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-options output=report_sesi9.html",
+
+        "Test-Tugas-10": "mocha test/sesi-10/test_sesi10.js  --recursive --timeout 60000",
+        "Test-Tugas-10-with-grep": "mocha test/sesi-10/test_sesi10.js  --recursive --timeout 60000 --grep 'change'",
+        "Test-Tugas-10-with-parallel": "mocha test/sesi-10/test_sesi10.js  --recursive --timeout 60000",
+        "Tugas-10-mochawesome": "mocha test/sesi-10/test_sesi10.js  --recursive --timeout 60000 --reporter mochawesome",
+        "Tugas-10-simple-html": "mocha test/sesi-10/test_sesi10.js  --recursive --timeout 60000 --reporter mocha-simple-html-reporter --reporter-options output=report_sesi10.html"
     },
     "dependencies": {
         "ajv": "^8.17.1",
